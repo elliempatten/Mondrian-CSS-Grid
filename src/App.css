@@ -1,32 +1,86 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  flex: 1;
+  background-color: aliceblue;
+  color: #282c34;
+  text-align: left;
+  padding: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+.main {
+  flex: 25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  min-width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box {
+  width: 70vh;
+  height: 70vh;
+  min-height: 300px;
+  min-width: 300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+@media screen and (max-width: 750px) {
+  .box {
+    width: 60vw;
+    height: 60vw;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+.gridItem {
+  border: 6px solid black;
+  margin: 0;
+}
+
+.footer {
+  box-sizing: border-box;
+  color: aliceblue;
+  width: 100%;
+  flex: 1;
+  padding: 5px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.red {
+  background: rgb(200, 57, 41);
+}
+
+.blue {
+  background: rgb(25, 28, 154);
+}
+
+.yellow {
+  background: rgb(246, 214, 124);
+}
+.white {
+  background: rgb(225, 227, 208);
+}
+
+.black {
+  background: rgb(20, 8, 14);
 }
