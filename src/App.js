@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import classNames from 'classnames';
 
 const colours = [
-  // { colour: 'red', column: 2, row: 2, span: 4},
-  //{ colour: 'blue', column:  },
-
   { colour: 'white', column: 1, row: 1, columnSpan: 2, rowSpan: 1 },
   { colour: 'white', column: 3, row: 1, columnSpan: 3, rowSpan: 1 },
   { colour: 'yellow', column: 6, row: 1, columnSpan: 2, rowSpan: 1 },
@@ -28,7 +25,6 @@ const colours = [
   { colour: 'white', column: 2, row: 8, columnSpan: 2, rowSpan: 2 },
   { colour: 'white', column: 4, row: 9, columnSpan: 4, rowSpan: 1 }
 ];
-// 8 columns
 class App extends Component {
   constructor(props) {
     super(props);
